@@ -1,0 +1,588 @@
+/*
+MIT Skeleton Layout
+*/
+
+/* Table of Content
+==================================================
+	#Typography
+	#Buttons
+	#Generic Styles
+	#Separators
+	#Nav
+	#Intro
+	#Mission
+	#Services
+	#Team
+	#Contact
+	#Media Queries
+	#Font-Face */
+
+/*****************************************************
+1: Typography
+******************************************************/
+
+h1, h2, h3 {
+	font-family: 'Arimo', sans-serif;
+}
+
+h1 {
+	color: #434343;
+	font-size: 120px;
+	font-weight: 700;
+	position: relative;
+	z-index: 150;
+	margin-bottom: 70px;
+}
+
+h1.small {
+	font-size: 90px;
+	margin-bottom: 40px;
+}
+
+h2 {
+	font-size: 60px;
+	font-weight: 700;
+	color: #434343;
+	text-align: center;
+	margin-top: 90px;
+	margin-bottom: 80px;
+}
+
+h2.white {
+	color: #fff;
+}
+
+span.lines {
+	border-top: 1px solid #aeaeae;
+	border-bottom: 1px solid #aeaeae;
+}
+
+h3 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #434343;
+}
+
+h3.white {
+	color: #fff;
+}
+
+h4 {
+	font-family: 'Arimo', sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	color: #434343;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-family: 'Arimo', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #434343;
+}
+
+p {
+	font-family: 'Arimo', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 1.25em;
+	color: #515151;
+}
+
+p.white {
+	color: #f9f9f9;
+}
+
+
+
+/*****************************************************
+2: Buttons
+******************************************************/
+
+.button1,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	background: #515151;
+	border: 0;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	margin-bottom: 20px;
+	line-height: normal;
+	padding: 6px 10px;
+	font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.button1:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+	color: #3a3a3a;
+	background: #e8e8e8;
+	border: 0; 
+}
+
+.button1:active,
+button1:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+	color: #3a3a3a;
+	background: #e8e8e8;
+	border: 0;
+}
+
+.button2 {
+	background: #e8e8e8;
+	border: 0;
+	color: #3a3a3a;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: normal;
+	padding: 6px 10px;
+	font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.button2:hover {
+	color: #e8e8e8;
+	background: #3a3a3a;
+	border: 0; 
+}
+
+.button3 {
+    background: #e8e8e8;
+	border: 0;
+	color: #3a3a3a;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: normal;
+	padding: 4px 8px;
+	font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.button3:hover {
+	color: #e8e8e8;
+	background: #3a3a3a;
+	border: 0; 
+}
+
+
+/* Fix for odd Mozilla border & padding issues */
+.button1::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+
+
+/*****************************************************
+3: Generic Styles
+******************************************************/
+
+.action {
+	margin-top: 50px;
+	padding: 40px 0 20px 0;
+	text-align: center;
+	border-top: 1px solid #d3d3d3;
+}
+
+.action p {
+	font-size: 22px;
+	font-weight: 600;
+	color: #515151;
+}
+
+.action p.white {
+	color: #ececec;
+}
+
+.hidden {
+	display: none;
+}
+
+
+
+/*****************************************************
+4: Separators
+******************************************************/
+
+p.separator {
+	font-size: 30px;
+	font-weight: 600;
+	color: #fff;
+	line-height: 38px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 200;
+	text-align: center;
+	padding-top: 240px;
+}
+
+#separator0 {
+	width: 100%;
+	height: 700px;
+	position: relative;
+    background-color:white;
+}
+
+#separator0 .bg0 {
+	background: url(b0.png) fixed no-repeat;
+	margin: 0 0 0 0;
+	padding: 0;
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+    background-position:45%;
+    background-size:50% 66%;
+}
+
+#separator1 {
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+
+#separator1 .bg2 {
+	background: url(b1.png) fixed no-repeat;
+	margin: 0 0 0 0;
+	padding: 0;
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+    background-position:center;
+    background-size:100% 100%;
+}
+
+#separator2 {
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+
+#separator2 .bg3 {
+	background: url(b2.png) fixed no-repeat;
+	margin: 0 0 0 0;
+	padding: 0;
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+    background-position:center;
+    background-size:100% 100%;
+}
+
+#separator3 {
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+
+#separator3 .bg4 {
+	background: url(b3.png) fixed no-repeat;
+	margin: 0 0 0 0;
+	padding: 0;
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+    background-position:center;
+    background-size:100% 100%;
+}
+
+
+/*****************************************************
+5: Nav
+******************************************************/
+
+nav {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* See more on stylesheets/slimmenu.css */
+
+
+
+/*****************************************************
+6: Intro
+******************************************************/
+
+#Welcome {
+	width: 100%;
+	height: 600px;
+	text-align: center;
+	z-index: 100;
+}
+
+
+
+/*****************************************************
+7: Mission
+******************************************************/
+
+#Mission {
+	background: rgb(240,248,247);
+	position: relative;
+	z-index: 300;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+}
+#Mission p{margin-left:15%;
+            margin-right:15%;
+            text-align:center;
+            margin-bottom:5%}
+
+#Services {
+	background: rgb(255,255,204);
+	position: relative;
+	z-index: 300;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+}
+#Services p{margin-left:15%;
+            margin-right:15%;
+            text-align:center;
+            margin-bottom:5%}
+
+#Team{background:rgb(240,248,247);
+    	position: relative;
+	z-index: 300;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+}
+#Team p{margin-left:15%;
+            margin-right:15%;
+            text-align:center;
+            margin-bottom:5%}
+
+/*****************************************************
+12: Contact
+******************************************************/
+
+#Contact {
+	background: rgb(224,241,177);
+	position: relative;
+	z-index: 300;
+	padding-top: 20px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+    padding-bottom:5px;
+}
+#Contact p{margin-left:15%;
+            margin-right:15%;
+            text-align:center}
+
+#contact-area {
+	width: 40%;
+	margin-top: 25px;
+    margin-left:30%;
+    margin-right:30%;
+}
+
+#formlabel {display:block;
+    text-align:left;
+    margin-bottom:3px}
+
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 471px;
+	font-family: Arimo, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+	height: 90px;
+    padding-top:5px;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	border: 2px solid black;
+}
+
+label{font-family:arimo;
+    font-size:22px;
+    padding-bottom:3px;
+    color:rgb(140,140,140);
+    font-weight:none;
+    text-decoration:none;}
+
+div #textbox{margin-bottom:20px}
+
+button  {
+	background: #fff;
+	color: black;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 300;
+	text-decoration: none;
+	cursor: pointer;
+	margin-bottom: 20px;
+	line-height: normal;
+	padding: 6px 10px;
+	font-family: Arimo, sans-serif;
+}
+
+span{text-decoration:none;
+    border: 2px rgb(217,217,217);}
+
+/*Hover*/
+button:hover  {
+    color: black;
+    background: rgb(240,248,247);
+
+
+/*****************************************************
+13: Media Queries
+******************************************************/
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 1024px) {
+		
+		.title {
+			position: relative;
+		}
+		
+		#intro {
+			height: 500px;
+		}
+		
+		.title {
+			padding-top: 20px;
+		}
+		
+		h1 {
+			font-size: 100px;
+			margin-bottom: 60px;
+		}
+		h1.small {
+			font-size: 80px;
+			margin-bottom: 20px;
+		}
+    
+        a.proj-mobile {
+            display: block;
+        }
+    
+        .hoverimage {
+            display: none;
+        }
+        .overlay-img, img.icn1, img.icn2 {
+            display: none;
+        }
+		
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+		h1 {
+			font-size: 70px;
+			margin-bottom: 20px;
+		}
+		
+		h1.small {
+			font-size: 40px;
+			margin-bottom: 20px;
+		}
+		
+		.title p {
+			font-size: 20px;
+			line-height: 28px;
+		}
+		
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		
+		#intro {
+			height: 375px;
+		}
+		
+		.title {
+			position: relative;
+			padding-top: 20px;
+		}
+		
+		.intro-line {
+			display: none;
+		}
+		
+		h1 {
+			font-size: 60px;
+			margin-bottom: 15px;
+		}
+		
+		h1.small {
+			font-size: 30px;
+			margin-bottom: 15px;
+		}
+		
+		.title p {
+			font-size: 18px;
+			line-height: 28px;
+            margin-bottom: 0;
+		}
+    
+        .social-intro {
+            margin-top: 10px;
+        }
+		
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
